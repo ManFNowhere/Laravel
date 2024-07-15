@@ -1,0 +1,4 @@
+<a href="/event/{{$d->slug}}" class="text-center min-w-32 md:min-h-80 md:min-w-80 my-4 block max-w-48 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" style="background-image: url({{  ($d->cover) ? '/storage/'.$d->cover : 'https://source.unsplash.com/1900x900/?random' }}); background-size: cover;">
+    <h5 class="mb-2 md:pt-20 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $d->title }}</h5>
+    <h5 class="mb-2 text-s font-bold tracking-tight text-gray-900 dark:text-white">Speaker : {{ $d->user->name }}</h5>
+</a>
